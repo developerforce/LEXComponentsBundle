@@ -56,4 +56,3 @@ Among these components we cover the following use cases that are common in javas
 10. Select the layout that you will add the quick action.
 11. From "Mobile & Lightning Actions" drag and drop the quick action in the page layout
 12. Save
-# LEXComponentsBundle
