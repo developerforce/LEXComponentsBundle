@@ -1,0 +1,48 @@
+<!-- 
+
+The "body" of the component needs certain conditions so it can be used as an action, also needs to
+have context of the page that will be executed.
+
+For the component to know where is standing, needs what you can see as "force:hasRecordId" (in implements)
+That condition (that is called interface) is used to save the actual record Id, so we can work on that record.
+
+For the component to be used as a Quick Action, "force:lightningQuickActionWithoutHeader" is needed.
+
+In this case we are using Lightning Data Service (LDS), so an Apex class is not needed.
+
+-->
+<aura:component implements="force:lightningQuickActionWithoutHeader,force:hasRecordId" >
+    
+    <!-- In this scenario, we might only need to save an error (if that happens) to show -->
+    <aura:attribute name="recordError" type="String" access="private" />
+    <force:recordData aura:id="recordHandler"
+                      recordId="{!v.recordId}"
+                      fields="Id" />
+    
+    <!-- User Interface -->
+    <div class="slds-modal__header" style="margin: 0 -30px 0 -30px">
+        <h2 class="slds-text-heading_medium slds-hyphenate">Delete Contact</h2>
+    </div>
+    <!-- Display LDS errors, if any -->
+    <aura:if isTrue="{!not(empty(v.recordError))}">
+    	<div class="recordError">
+        	<ui:message title="Error" severity="error" closable="true">
+            	{!v.recordError}
+            </ui:message>
+        </div>
+    </aura:if>
+    <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+    	<p>You are about to delete the contact.</p>
+        <br/>
+        <p>Do you want to continue?</p>
+    </div>
+    <div class="slds-modal__footer" style="margin: 25px -30px -30px -30px">
+    <!-- The style attribute is necessary so the lightning components can have the same look and feel as the standard salesforce modals -->
+    <!-- The values in style="margin:" may vary according to the space used in the component design -->
+        <lightning:button class="slds-button_neutral" label="Delete" onclick="{!c.handleDeleteRecord}" />
+        <lightning:button class="slds-button_brand" label="Cancel" onclick="{!c.cancel}"/>
+    </div>
+    <!-- The height of the modal is defined in salesforce, when you create the new action. -->
+    <!-- Recommended height size: 250px -->
+    
+</aura:component>

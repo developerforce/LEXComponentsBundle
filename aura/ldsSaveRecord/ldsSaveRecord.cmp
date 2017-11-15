@@ -1,0 +1,58 @@
+<!-- 
+
+The "body" of the component needs certain conditions so it can be used as an action, also needs to
+have context of the page that will be executed.
+
+For the component to know where is standing, needs what you can see as "force:hasRecordId" (in implements)
+That condition (that is called interface) is used to save the actual record Id, so we can work on that record.
+
+For the component to be used as a Quick Action, "force:lightningQuickActionWithoutHeader" is needed.
+
+In this case we are using Lightning Data Service (LDS), so an Apex class is not needed.
+
+-->
+<aura:component implements="force:lightningQuickActionWithoutHeader,force:hasRecordId">
+    
+    <!-- To implement LDS we need "target" attributes, to show and save data, also "force:recordData" is needed -->
+    <aura:attribute name="record" type="Object" />
+    <aura:attribute name="simpleRecord" type="Object" />
+    <aura:attribute name="recordError" type="String" />
+    <force:recordData aura:id="recordEditor"
+                      layoutType="FULL"
+                      recordId="{!v.recordId}"
+                      targetError="{!v.recordError}"
+                      targetRecord="{!v.record}"
+                      targetFields="{!v.simpleRecord}"
+                      mode="EDIT" />
+    
+    <!-- targetRecord -> Where to store the result
+		 targetFields -> A simplified view of the fields on targetRecord, we refer this object in the user interface markup
+         targetError  -> If any error is found, it stores the error message
+	-->
+    
+	<!-- User Interface -->    
+    <div class="slds-modal__header" style="margin: 0 -30px 0 -30px">
+       	<h2 class="slds-text-heading_medium slds-hyphenate">{!v.simpleRecord.Name}</h2>
+    </div>
+    <!-- Display LDS errors if any -->
+	<aura:if isTrue="{!not(empty(v.recordError))}">
+    	<div class="recordError">
+        	<ui:message title="Error" severity="error" closable="true">
+            	{!v.recordError}
+            </ui:message>
+        </div>
+    </aura:if>
+    <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+    	<lightning:input aura:id="recordName" name="recordName" label="Name"
+                     value="{!v.simpleRecord.Name}" required="true" />
+    </div>
+    <div class="slds-modal__footer" style="margin: 31px -30px -30px -30px">
+    <!-- The style attribute is necessary so the lightning components can have the same look and feel as the standard salesforce modals -->
+    <!-- The values in style="margin:" may vary according to the space used in the component design -->
+    	<lightning:button class="slds-button_brand" label="Cancel" onclick="{!c.cancel}" />
+        <lightning:button class="slds-button_neutral" label="Save Record" onclick="{!c.handleSaveRecord}" />
+    </div>
+    <!-- The height of the modal is defined in salesforce, when you create the new action. -->
+    <!-- Recommended height size: 250px -->
+    
+</aura:component>

@@ -1,0 +1,68 @@
+<!-- 
+
+The "body" of the component needs certain conditions so it can be used as an action, also needs to
+have context of the page that will be executed.
+
+For the component to know where is standing, needs what you can see as "force:hasRecordId" (in implements)
+That condition (that is called interface) is used to save the actual record Id, so we can work on that record.
+
+For the component to be used as a Quick Action, "force:lightningQuickActionWithoutHeader" is needed.
+
+In this case we are using Lightning Data Service (LDS), so an Apex class is not needed.
+
+-->
+<aura:component implements="force:lightningQuickActionWithoutHeader,force:hasRecordId">
+    
+    <!-- To implement LDS we need "target" attributes, to show and save data, also "force:recordData" is needed -->
+	<aura:attribute name="newContact" type="Object" />
+    <aura:attribute name="simpleNewContact" type="Object" />
+    <aura:attribute name="newContactError" type="String" />
+    <force:recordData aura:id="contactRecordCreator"
+                      layoutType="FULL"
+                      targetRecord="{!v.newContact}"
+                      targetFields="{!v.simpleNewContact}"
+                      targetError="{!v.newContactError}"
+                      />
+    
+    <!-- targetRecord -> Where to store the result
+		 targetFields -> A simplified view of the fields on targetRecord, we refer this object in the user interface markup
+         targetError  -> If any error is found, it stores the error message -->
+    
+    <!-- First we initialize the form -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    <!-- User Interface -->
+    <div class="slds-modal__header" style="margin: 0 -30px 0 -30px">
+            <p class="slds-text-heading--label">Create Contact</p>
+    </div>
+    <!-- Display LDS errors if any -->
+    <aura:if isTrue="{!not(empty(v.newContactError))}">
+    	<div class="recordError">
+        	<ui:message title="Error" severity="error" closable="true">
+                {!v.newContactError}
+            </ui:message>
+        </div>
+    </aura:if>
+	<!-- New Contact Form -->
+    <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+    	<div class="slds-form--stacked">
+    	<lightning:input aura:id="contactField" name="firstName" label="First Name"
+                         value="{!v.simpleNewContact.FirstName}" required="true" />
+        
+        <lightning:input aura:id="contactField" name="lastName" label="Last Name"
+                         value="{!v.simpleNewContact.LastName}" required="true" />
+        
+        <lightning:input aura:id="contactField" name="Title" label="Title"
+                         value="{!v.simpleNewContact.Title}" required="true" />
+    </div>
+    </div>
+    <div class="slds-modal__footer" style="margin: 8px -30px -30px -30px">
+    <!-- The style attribute is necessary so the lightning components can have the same look and feel as the standard salesforce modals -->
+    <!-- The values in style="margin:" may vary according to the space used in the component design -->
+        <lightning:button class="slds-button_neutral" onclick="{!c.handleSaveContact}" label="Save Contact" />
+        <lightning:button class="slds-button_brand" onclick="{!c.cancel}" label="Cancel"/>
+    </div>
+    <!-- The height of the modal is defined in salesforce, when you create the new action. -->
+    <!-- Recommended height size: 338px -->
+    
+</aura:component>

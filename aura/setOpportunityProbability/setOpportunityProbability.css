@@ -1,0 +1,20 @@
+.THIS .uiButton.slds-button_success{
+    
+    padding: 5px 48px;
+    font-size: 15px;
+    
+}
+
+.THIS .uiButton.slds-button_brand{
+    
+    padding: 5px 35px; 
+    font-size: 15px;
+    
+}
+
+.THIS .uiButton.slds-button_destructive{
+    
+    padding: 5px 50px; 
+    font-size: 15px;
+    
+}
