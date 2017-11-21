@@ -3,3 +3,15 @@
     padding-right: 33px;
     
 }
+
+@media (min-width: 1024px){
+    
+    .THIS.slds-modal__header{
+        margin: 0 -30px 0 -30px;
+    }
+    
+    .THIS.slds-modal__footer{
+        margin: 1px -30px -30px -30px;
+    }
+    
+}

@@ -28,7 +28,7 @@ An Apex controller is needed if we are going to update data (using the database)
     <aura:attribute name="email" type="String" />
     
     <!-- User Interface -->
-    <div class="slds-modal__header" style="margin: 0 -30px 0 -30px">
+    <div class="slds-modal__header">
         <h2 class="slds-text-heading_medium slds-hyphenate">New Contact</h2>
     </div>
     <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1" >
@@ -45,7 +45,7 @@ An Apex controller is needed if we are going to update data (using the database)
             <ui:inputText label="Email" value="{!v.email}" />
         </div>
     </div>
-    <div class="slds-modal__footer" style="margin: 8px -30px -30px -30px">
+    <div class="slds-modal__footer">
         <!-- The style attribute is necessary so the lightning components can have the same look and feel as the standard salesforce modals -->
         <!-- The values in style="margin:" may vary according to the space used in the component design -->
         <lightning:button class="slds-button_neutral" label="Create" onclick="{!c.submitForm}" />

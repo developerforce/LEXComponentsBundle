@@ -44,7 +44,7 @@ In this case we are using Lightning Data Service (LDS), so an Apex class is not 
     <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
     
     <!-- Header with details about the Account -->    
-    <div class="slds-modal__header" style="margin: 0 -30px 0 -30px">
+    <div class="slds-modal__header">
         <p class="slds-text-heading--label">{!v.simpleAccount.Name}</p>
         <h1 class="slds-page-header__title slds-m-right--small slds-truncate slds-align-left">Create New Contact</h1>
     </div>
@@ -80,7 +80,7 @@ In this case we are using Lightning Data Service (LDS), so an Apex class is not 
         <lightning:input aura:id="contactField" name="email" label="Email"
                          value="{!v.simpleNewContact.Email}" />
     </div>
-    <div class="slds-modal__footer" style="margin: 8px -30px -30px -30px">
+    <div class="slds-modal__footer">
     <!-- The style attribute is necessary so the lightning components can have the same look and feel as the standard salesforce modals -->
     <!-- The values in style="margin:" may vary according to the space used in the component design -->
         <lightning:button class="slds-button_neutral" label="Save Contact" onclick="{!c.handleSaveContact}"/>

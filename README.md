@@ -8,7 +8,7 @@ Among these components we cover the following use cases that are common in javas
 
 ## Getting Started
 1. Install the unmanaged package in your developer org
-    * [Download](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1I000002AWcU)
+    * [Download](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1I000002vjCI)
 
 ## Classes & Components
 1. Apex class: CustomController.apxc

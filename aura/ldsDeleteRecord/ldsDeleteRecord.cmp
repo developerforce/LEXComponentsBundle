@@ -20,7 +20,7 @@ In this case we are using Lightning Data Service (LDS), so an Apex class is not 
                       fields="Id" />
     
     <!-- User Interface -->
-    <div class="slds-modal__header" style="margin: 0 -30px 0 -30px">
+    <div class="slds-modal__header">
         <h2 class="slds-text-heading_medium slds-hyphenate">Delete Contact</h2>
     </div>
     <!-- Display LDS errors, if any -->
@@ -36,7 +36,7 @@ In this case we are using Lightning Data Service (LDS), so an Apex class is not 
         <br/>
         <p>Do you want to continue?</p>
     </div>
-    <div class="slds-modal__footer" style="margin: 25px -30px -30px -30px">
+    <div class="slds-modal__footer" >
     <!-- The style attribute is necessary so the lightning components can have the same look and feel as the standard salesforce modals -->
     <!-- The values in style="margin:" may vary according to the space used in the component design -->
         <lightning:button class="slds-button_neutral" label="Delete" onclick="{!c.handleDeleteRecord}" />
