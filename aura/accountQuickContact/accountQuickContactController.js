@@ -1,19 +1,26 @@
+/*
+ * Copyright (c) 2018, salesforce.com, inc.
+ * All rights reserved.
+ * Licensed under the BSD 3-Clause license.
+ * For full license text, see LICENSE.txt file in the repo root
+*/
+
 ({
     // Every function written here should start in this format
     // nameOfFunction : function(component, event, helper)
     submitForm : function(component, event, helper) {
-        
+
         //The following shows how the Javascript controller gets the attributes from the component
         var id = component.get("v.recordId");
         var firstName = component.get("v.firstName");
         var lastName = component.get("v.lastName");
         var phone = component.get("v.phone");
         var email = component.get("v.email");
-        
+
         //This is how the javascript controller gets the function from the Apex controller
         //The component works like a "bridge" between the Javascript controller and the Apex controller
         var action = component.get("c.newQuickContactForAccount");
-        
+
         //Set the parameters of the Apex controller function
         //The name of the parameter MUST be exacty the same as in the APEX controller
         action.setParams({
@@ -23,7 +30,7 @@
             "phone" : phone,
             "email" : email
         });
-        
+
         //This is how we define what we do when the response from the Apex controller comes.
         action.setCallback(this,
         	//We define what to do inside a function that gets the response from the apex controller as a parameter
@@ -32,7 +39,7 @@
             	var state = response.getState();
             	if(state === "SUCCESS"){
                 	//These next commands are how we call the Aura functions, those are predefined functions that in this case, helps with the user interface
-                	//For more information about Aura: 
+                	//For more information about Aura:
                 	//		https://<myDomain>.lightning.force.com/auradocs/reference.app
                 	//Replace "<myDomain>" with your actual domain
                 	var resultsToast = $A.get("e.force:showToast");
@@ -58,12 +65,12 @@
         );
         //This is how we execute the function in the APEX controller
         $A.enqueueAction(action);
-        
+
 	},
-    
+
     cancel : function(component, event, helper){
         $A.get("e.force:closeQuickAction").fire();
     }
-    
+
 
 })

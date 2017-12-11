@@ -1,4 +1,11 @@
 <!--
+ * Copyright (c) 2018, salesforce.com, inc.
+ * All rights reserved.
+ * Licensed under the BSD 3-Clause license.
+ * For full license text, see LICENSE.txt file in the repo root
+ -->
+
+<!--
 First things first:
 The "body" of the component needs certain conditions so it can be used as an action, also needs to
 have context of the page that will be executed, and in this case since we are creating data
@@ -12,21 +19,21 @@ For the component to be used as a Quick Action, "force:lightningQuickActionWitho
 An Apex controller is needed if we are going to update data (using the database)
 
 -->
-<aura:component implements="force:lightningQuickActionWithoutHeader,force:hasRecordId" 
+<aura:component implements="force:lightningQuickActionWithoutHeader,force:hasRecordId"
                 controller="CustomController">
     			<!-- In the future, Replace "CustomController" with an Apex class that you will use -->
-    
-    
+
+
     <!-- This attribute saves the actual record ID -->
     <aura:attribute name="recordId" type="String" />
-    
+
     <!--All the next attributes are the one needed to save a quick contact for the account.
 		First Name, Last Name, Phone and Email-->
     <aura:attribute name="firstName" type="String" />
     <aura:attribute name="lastName" type="String" />
     <aura:attribute name="phone" type="String" />
     <aura:attribute name="email" type="String" />
-    
+
     <!-- User Interface -->
     <div class="slds-modal__header">
         <h2 class="slds-text-heading_medium slds-hyphenate">New Contact</h2>
@@ -50,8 +57,8 @@ An Apex controller is needed if we are going to update data (using the database)
         <!-- The values in style="margin:" may vary according to the space used in the component design -->
         <lightning:button class="slds-button_neutral" label="Create" onclick="{!c.submitForm}" />
         <lightning:button class="slds-button_brand" label="Cancel" onclick="{!c.cancel}" />
-        <!-- 
-                With the "c" in "{!c.nameOfTheFunction}" is how the component communicates with the 
+        <!--
+                With the "c" in "{!c.nameOfTheFunction}" is how the component communicates with the
                 Javascript controller.
                 "nameOfTheFunction" Will be replaced with the name of the function that will be executed in the
                 Javascript controller.
@@ -59,5 +66,5 @@ An Apex controller is needed if we are going to update data (using the database)
     </div>
     <!-- The height of the modal is defined in salesforce, when you create the new action. -->
     <!-- Recommended height size: 395px -->
-    
+
 </aura:component>

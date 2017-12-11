@@ -1,7 +1,14 @@
+/*
+ * Copyright (c) 2018, salesforce.com, inc.
+ * All rights reserved.
+ * Licensed under the BSD 3-Clause license.
+ * For full license text, see LICENSE.txt file in the repo root
+ */
+
 @isTest
 private class TestCustomController {
-    
-    @testSetup 
+
+    @testSetup
     static void setupData(){
         Opportunity o = new Opportunity();
         o.Amount = 1000.00;
@@ -9,7 +16,7 @@ private class TestCustomController {
         o.CloseDate = Date.Today().addDays(5);
         o.StageName = 'Prospecting';
         insert o;
-        
+
         Opportunity o2 = new Opportunity();
         o2.Amount = 2000.00;
         o2.Name = 'Another Test Opportunity For Unit Test Purposes';
@@ -17,7 +24,7 @@ private class TestCustomController {
         o2.StageName = 'Prospecting';
         o2.Description = 'Test Data';
         insert o2;
-        
+
         Account a = new Account();
         a.Name = 'Test Account For Unit Test Purposes';
         a.BillingStreet = '350 Mission St';
@@ -29,14 +36,14 @@ private class TestCustomController {
         a.ShippingState = 'NY';
         a.ShippingCountry = 'US';
         insert a;
-        
+
         Case c1 = new Case();
         c1.Status = 'New';
         c1.Origin = 'Phone';
         c1.Priority = 'High';
         c1.AccountId = a.Id;
         insert c1;
-        
+
         Case c2 = new Case();
         c2.Status = 'New';
         c2.Origin = 'Phone';
@@ -44,7 +51,7 @@ private class TestCustomController {
         c2.AccountId = a.Id;
         insert c2;
     }
-    
+
     @isTest
     static void convertToProbonoOpportunity(){
         Opportunity opp = [SELECT Id, Amount, Description FROM Opportunity WHERE Name = 'Test Opportunity For Unit Test Purposes'];
@@ -55,7 +62,7 @@ private class TestCustomController {
         System.assertEquals(0, updatedOpp.Amount);
         System.assertEquals('Converted to Pro-Bono.', updatedOpp.Description);
     }
-    
+
     @isTest
     static void convertToProbonoOpportunityWithDescription(){
         Opportunity opp = [SELECT Id, Amount, Description FROM Opportunity WHERE Name = 'Another Test Opportunity For Unit Test Purposes'];
@@ -66,8 +73,8 @@ private class TestCustomController {
         System.assertEquals(0, updatedOpp.Amount);
         System.assertEquals('Test Data. Converted to Pro-Bono.', updatedOpp.Description);
     }
-    
-    @isTest 
+
+    @isTest
     static void newQuickContactForAccount(){
         Account acc = [SELECT Id FROM Account WHERE Name = 'Test Account For Unit Test Purposes'];
         Test.startTest();
@@ -79,8 +86,8 @@ private class TestCustomController {
         System.assertEquals('1231231231', c.Phone);
         System.assertEquals('unit@test.com', c.Email);
     }
-    
-    @isTest 
+
+    @isTest
     static void updateHighProbability(){
         Opportunity op = [SELECT Id FROM Opportunity WHERE Name = 'Test Opportunity For Unit Test Purposes'];
         Test.startTest();
@@ -89,7 +96,7 @@ private class TestCustomController {
         Opportunity updatedOp = [SELECT Id, Probability FROM Opportunity WHERE Name = 'Test Opportunity For Unit Test Purposes'];
         System.assertEquals(80.0, updatedOp.Probability);
     }
-    
+
     @isTest
     static void updateMediumProbability(){
         Opportunity op = [SELECT Id FROM Opportunity WHERE Name = 'Test Opportunity For Unit Test Purposes'];
@@ -99,7 +106,7 @@ private class TestCustomController {
         Opportunity updatedOp = [SELECT Id, Probability FROM Opportunity WHERE Name = 'Test Opportunity For Unit Test Purposes'];
         System.assertEquals(50.0, updatedOp.Probability);
     }
-    
+
     @isTest
     static void updateLowProbability(){
         Opportunity op = [SELECT Id FROM Opportunity WHERE Name = 'Test Opportunity For Unit Test Purposes'];
@@ -109,8 +116,8 @@ private class TestCustomController {
         Opportunity updatedOp = [SELECT Id, Probability FROM Opportunity WHERE Name = 'Test Opportunity For Unit Test Purposes'];
         System.assertEquals(20.0, updatedOp.Probability);
     }
-    
-    @isTest 
+
+    @isTest
     static void getAccountBillingAddress(){
         Account acc = [SELECT Id FROM Account WHERE Name = 'Test Account For Unit Test Purposes'];
         Test.startTest();
@@ -121,7 +128,7 @@ private class TestCustomController {
         System.assertEquals('CA', accountFromServer.BillingState);
         System.assertEquals('US',accountFromServer.BillingCountry);
     }
-    
+
     @isTest
     static void getAccountShippingAddress(){
         Account acc = [SELECT Id FROM Account WHERE Name = 'Test Account For Unit Test Purposes'];
@@ -133,8 +140,8 @@ private class TestCustomController {
         System.assertEquals('NY', accountFromServer.ShippingState);
         System.assertEquals('US',accountFromServer.ShippingCountry);
     }
-    
-    @isTest 
+
+    @isTest
     static void massUpdateAccountCases(){
         Account acc = [SELECT Id FROM Account WHERE Name = 'Test Account For Unit Test Purposes'];
         Test.startTest();

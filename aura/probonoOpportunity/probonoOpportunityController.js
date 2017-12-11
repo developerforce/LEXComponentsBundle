@@ -1,21 +1,28 @@
+/*
+ * Copyright (c) 2018, salesforce.com, inc.
+ * All rights reserved.
+ * Licensed under the BSD 3-Clause license.
+ * For full license text, see LICENSE.txt file in the repo root
+*/
+
 ({
     // Every function written here should start in this format
     // nameOfFunction : function(component, event, helper)
 	convertoToProbono : function(component, event, helper) {
-		
+
         //This is how the javascript controller gets the record Id
         var id = component.get("v.recordId");
-        
+
         //This is how the javascript controller gets the function from the Apex controller
         //The component works like a "bridge" between the Javascript controller and the Apex controller
         var action = component.get("c.convertToProbonoOpportunity");
-        
+
         //Set the parameters of the Apex controller function
         //The name of the parameter MUST be exacty the same as in the APEX controller
         action.setParams({
             "opportunityId" : id
         });
-        
+
         //This is how we define what we do when the response from the Apex controller comes.
         action.setCallback(this,
             //We define what to do inside a function that gets the response from the apex controller as a parameter
@@ -51,10 +58,10 @@
         //This is how we execute the function in the APEX controller
         $A.enqueueAction(action);
 	},
-    
+
     cancel : function(component, event, helper){
         $A.get("e.force:closeQuickAction").fire();
     }
-    
-    
+
+
 })

@@ -1,8 +1,15 @@
+/*
+ * Copyright (c) 2018, salesforce.com, inc.
+ * All rights reserved.
+ * Licensed under the BSD 3-Clause license.
+ * For full license text, see LICENSE.txt file in the repo root
+*/
+
 ({
     // Every function written here should start in this format
     // nameOfFunction : function(component, event, helper)
 	doInit : function(component, event, helper) {
-        
+
         //Standard way to load a record template using Lightning Data Service
         component.find("contactRecordCreator").getNewRecord(
         	"Contact",
@@ -19,7 +26,7 @@
             })
         );
 	},
-    
+
     handleSaveContact : function(component, event, helper){
         //This is how we link the new Contact with the actual Account Id
         component.set("v.simpleNewContact.AccountId", component.get("v.recordId"));
@@ -32,7 +39,7 @@
                     "title" : "Contact saved",
                     "message" : "The new contact was created"
                 });
-                
+
                 $A.get("e.force:closeQuickAction").fire();
                 resultsToast.fire();
                 $A.get("e.force:refreshView").fire();
@@ -45,10 +52,10 @@
             }
         });
     },
-    
+
     cancel : function(component, event, helper){
         $A.get("e.force:closeQuickAction").fire();
     }
-    
-    
+
+
 })

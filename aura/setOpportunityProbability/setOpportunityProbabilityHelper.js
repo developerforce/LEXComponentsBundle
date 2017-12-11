@@ -1,22 +1,29 @@
+/*
+ * Copyright (c) 2018, salesforce.com, inc.
+ * All rights reserved.
+ * Licensed under the BSD 3-Clause license.
+ * For full license text, see LICENSE.txt file in the repo root
+*/
+
 ({
     //Helper method, used in the Javascript Controller
     //To main idea of helper methods is to reuse code and avoid writing the same stuff over and over again.
 	updateProbability : function(value, component) {
-        
+
         //This is how the javascript controller gets the record Id
         var id = component.get("v.recordId");
-        
+
         //This is how the javascript controller gets the function from the Apex controller
         //The component works like a "bridge" between the Javascript controller and the Apex controller
         var action = component.get("c.updateProbability");
-        
+
         //Set the parameters of the Apex controller function
         //The name of the parameter MUST be exacty the same as in the APEX controller
         action.setParams({
             "id" : id,
             "prob" : value
         });
-        
+
         //This is how we define what we do when the response from the Apex controller comes.
         action.setCallback(this,
             //We define what to do inside a function that gets the response from the apex controller as a parameter
