@@ -1,0 +1,39 @@
+/*
+ * Copyright (c) 2018, salesforce.com, inc.
+ * All rights reserved.
+ * Licensed under the BSD 3-Clause license.
+ * For full license text, see LICENSE.txt file in the repo root
+*/
+
+.THIS .uiButton.slds-button_success{
+
+    padding: 5px 48px;
+    font-size: 15px;
+
+}
+
+.THIS .uiButton.slds-button_brand{
+
+    padding: 5px 35px;
+    font-size: 15px;
+
+}
+
+.THIS .uiButton.slds-button_destructive{
+
+    padding: 5px 50px;
+    font-size: 15px;
+
+}
+
+@media (min-width: 1024px){
+
+    .THIS.slds-modal__header{
+        margin: 0 -30px 0 -30px;
+    }
+
+    .THIS.slds-modal__footer{
+        margin: 8px -30px -30px -30px;
+    }
+
+}

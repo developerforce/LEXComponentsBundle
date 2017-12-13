@@ -1,0 +1,54 @@
+<!--
+ * Copyright (c) 2018, salesforce.com, inc.
+ * All rights reserved.
+ * Licensed under the BSD 3-Clause license.
+ * For full license text, see LICENSE.txt file in the repo root
+ -->
+
+<!--
+First things first:
+The "body" of the component needs certain conditions so it can be used as an action, also needs to
+have context of the page that will be executed, and in this case since we are modifying data
+and we want to save the changes, we need an APEX class to help with the work.
+
+For the component to know where is standing, needs what you can see as "force:hasRecordId" (in implements)
+That condition (that is called interface) is used to save the actual record Id, so we can work on that record.
+
+For the component to be used as a Quick Action, "force:lightningQuickActionWithoutHeader" is needed.
+
+An Apex controller is needed if we are going to update data (using the database)
+
+-->
+<aura:component implements="force:hasRecordId,force:lightningQuickActionWithoutHeader"
+                controller="CustomController">
+    			<!-- In the future, Replace "CustomController" with an Apex class that you will use -->
+
+    <!-- This attribute saves the actual record ID -->
+    <aura:attribute name="recordId" type="String" />
+
+    <!-- User Interface -->
+    	<div class="slds-modal__header">
+            <h2 class="slds-text-heading_medium slds-hyphenate">Convert To Pro-Bono</h2>
+        </div>
+        <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+            <p>You are about to convert this Opportunity into a Pro-Bono one.</p>
+            <br/>
+            <p>Are you sure you want to continue?</p>
+        </div>
+        <div class="slds-modal__footer">
+            <!-- The style attribute is necessary so the lightning components can have the same look and feel as the standard salesforce modals -->
+            <!-- The values in style="margin:" may vary according to the space used in the component design -->
+            <lightning:button class="slds-button_neutral" onclick="{!c.convertoToProbono}" label="Yes" />
+            <lightning:button class="slds-button_brand" onclick="{!c.cancel}" label="No"/>
+            <!--
+                With the "c" in "{!c.nameOfTheFunction}" is how the component communicates with the
+                Javascript controller.
+                "nameOfTheFunction" Will be replaced with the name of the function that will be executed in the
+                Javascript controller.
+            -->
+        </div>
+
+    <!-- The height of the modal is defined in salesforce, when you create the new action. -->
+    <!-- Recommended height size: 250px -->
+
+</aura:component>

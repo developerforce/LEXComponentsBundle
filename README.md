@@ -7,8 +7,22 @@ Among these components we cover the following use cases that are common in javas
 3. Mass Updates
 
 ## Getting Started
-1. Install the unmanaged package in your developer org
-    * [Download](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1I000002vjCN)
+### For Salesforce DX use these instructions
+#### Mac or Linux
+```
+    git clone https://github.com/developerforce/LEXComponentsBundle
+    cd LEXComponentsBundle
+    ./install.sh
+```
+#### Windows
+```
+    git clone https://github.com/developerforce/LEXComponentsBundle
+    cd LEXComponentsBundle
+    install.cmd
+```
+
+### Non Salesforce DX - install unmanaged package to Developer Edition or Sandbox 
+[Click here to install](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1I000002vjCN)
 
 ## Classes & Components
 1. Apex class: CustomController.apxc
@@ -46,13 +60,15 @@ Among these components we cover the following use cases that are common in javas
 ## How to create a Lightning Quick Action in Salesforce
 1. Go to Setup
 2. Click on Object Manager
-3. Select an Object to add the Component
-4. Go to "Buttons, Links & Actions"
+3. Select the *Account* Object to add the Quick Action to
+4. Click the "Buttons, Links & Actions" in the left hand navigation
 5. Click on "New Action"
-6. Select in "Action Type" the option "Lightning Component"
-7. Select one of the components in "Lightning Component"
-8. Add a Label, a Name and Save
-9. Go to "Page Layouts"
-10. Select the layout that you will add the quick action.
-11. From "Mobile & Lightning Actions" drag and drop the quick action in the page layout
-12. Save
+6. Select in "Lightning Component in the "Action Type" drop down list
+7. Select one of the ldsAccountQuickConnect component in the "Lightning Component" drop down list
+8. Enter "Quick Contact" for the Label then click Save
+9. Click  "Page Layouts" in the left hand navigation
+10. Select the *Account Layout*
+11. In the *Salesforce Mobile and Lightning Experience* section of the layout click the *override the predefined actions* link in the first sentence to enable custom Quick Actions
+12. Click the *Mobile & Lightning Actions* and then drag and drop the *Quick Contact* quick action in the page layout
+13. Save
+14. Navigate to an account record and create a new contact using the quick action.
