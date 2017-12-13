@@ -8,17 +8,17 @@ Among these components we cover the following use cases that are common in javas
 
 ## Getting Started
 ### For Salesforce DX use these instructions
-#### Mac or Linux
+* #### Mac or Linux
 ```
-    git clone https://github.com/developerforce/LEXComponentsBundle
-    cd LEXComponentsBundle
-    ./install.sh
+git clone https://github.com/developerforce/LEXComponentsBundle
+cd LEXComponentsBundle
+./install.sh
 ```
-#### Windows
+* #### Windows
 ```
-    git clone https://github.com/developerforce/LEXComponentsBundle
-    cd LEXComponentsBundle
-    install.cmd
+git clone https://github.com/developerforce/LEXComponentsBundle
+cd LEXComponentsBundle
+install.cmd
 ```
 
 ### Non Salesforce DX - install unmanaged package to Developer Edition or Sandbox 
