@@ -22,13 +22,21 @@ install.cmd
 ```
 
 ### Non Salesforce DX - install unmanaged package to Developer Edition or Sandbox 
-[Click here to install](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1I000002vjCN)
+[Click here to install](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1I000002xvXu)
 
 ## Classes & Components
-1. Apex class: CustomController.apxc
-    * Apex class where the server side methods of the components are written.
-2. Apex class: TestUnitController.apxc
-    * Apex class where the unit test of the server-side methods are written.
+1. Apex classes (where the server side methods of the components are written): 
+    * RedirectConditionalUrlController.cls
+    * MassUpdateAccountCasesController.cls
+    * AccountQuickContactController.cls
+    * SetOpportunityProbabilityController.cls	
+    * ProBonoOpportunityController.cls
+2. Apex classes (for unit tests):
+    * TestAccountQuickContactController.cls
+    * TestProBonoOpportunityController.cls
+    * TestRedirectConditionalUrlController.cls
+    * TestSetOpportunityProbabilityController.cls
+    * TestMassUpdateAccountCasesController.cls
 3. Component: probonoOpportunity
     * Converts an Opportunity into a pro-bono one (Amount equals 0).
     * It uses an Apex controller for server-side process.

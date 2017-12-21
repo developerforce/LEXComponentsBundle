@@ -21,7 +21,7 @@ An Apex controller is needed if we are going to update data (using the database)
 -->
 <aura:component implements="force:lightningQuickActionWithoutHeader,force:hasRecordId"
                 controller="MassUpdateAccountCasesController">
-    			<!-- In the future, Replace "CustomController" with an Apex class that you will use -->
+    			<!-- In the future, Replace the controller with an Apex class that you will use -->
 
     <!-- This attribute saves the actual record ID -->
     <aura:attribute name="recordId" type="String" />
