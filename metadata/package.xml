@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>TestAccountQuickContactController</members>
+        <members>TestMassUpdateAccountCasesController</members>
+        <members>TestProBonoOpportunityController</members>
+        <members>TestRedirectConditionalUrlController</members>
+        <members>TestSetOpportunityProbabilityController</members>
+        <members>AccountQuickContactController</members>
+        <members>MassUpdateAccountCasesController</members>
+        <members>ProBonoOpportunityController</members>
+        <members>RedirectConditionalUrlController</members>
+        <members>SetOpportunityProbabilityController</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>accountQuickContact</members>
+        <members>ldsAccountQuickContact</members>
+        <members>ldsDeleteRecord</members>
+        <members>ldsDisplayRecord</members>
+        <members>ldsSaveRecord</members>
+        <members>massUpdateAccountCases</members>
+        <members>probonoOpportunity</members>
+        <members>redirectConditionalUrl</members>
+        <members>setOpportunityProbability</members>
+        <name>AuraDefinitionBundle</name>
+    </types>    
+    <version>42.0</version>
+</Package>
+

@@ -1,0 +1,100 @@
+<!--
+ * Copyright (c) 2018, salesforce.com, inc.
+ * All rights reserved.
+ * Licensed under the BSD 3-Clause license.
+ * For full license text, see LICENSE.txt file in the repo root
+ -->
+
+<!--
+
+The "body" of the component needs certain conditions so it can be used as an action, also needs to
+have context of the page that will be executed.
+
+For the component to know where is standing, needs what you can see as "force:hasRecordId" (in implements)
+That condition (that is called interface) is used to save the actual record Id, so we can work on that record.
+
+For the component to be used as a Quick Action, "force:lightningQuickActionWithoutHeader" is needed.
+
+In this case we are using Lightning Data Service (LDS), so an Apex class is not needed.
+
+-->
+<aura:component implements="force:lightningQuickActionWithoutHeader,force:hasRecordId">
+
+    <!-- To implement LDS we need "target" attributes, to show and save data, also "force:recordData" is needed -->
+	<!-- First we load Account Data (this recordData), then the new contact form (second recorData) -->
+    <aura:attribute name="account" type="Object" />
+    <aura:attribute name="simpleAccount" type="Object" />
+    <aura:attribute name="accountError" type="String" />
+    <force:recordData aura:id="accountRecordLoader"
+                      recordId="{!v.recordId}"
+                      fields="Name,BillingCity,BillingState"
+                      targetRecord="{!v.account}"
+                      targetFields="{!v.simpleAccount}"
+                      targetError="{!v.accountError}" />
+
+    <!-- targetRecord -> Where to store the result
+		 targetFields -> A simplified view of the fields on targetRecord, we refer this object in the user interface markup
+         targetError  -> If any error is found, it stores the error message
+		 fields -> Specifies which of the record's fields to query	 -->
+
+
+    <aura:attribute name="newContact" type="Object" access="private" />
+    <aura:attribute name="simpleNewContact" type="Object" access="private" />
+    <aura:attribute name="newContactError" type="String" access="private" />
+    <force:recordData aura:id="contactRecordCreator"
+                     layoutType="FULL"
+                     targetRecord="{!v.newContact}"
+                     targetFields="{!v.simpleNewContact}"
+                     targetError="{!v.newContactError}" />
+
+    <!-- First we initialize the form -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    <!-- Header with details about the Account -->
+    <div class="slds-modal__header">
+        <p class="slds-text-heading--label">{!v.simpleAccount.Name}</p>
+        <h1 class="slds-page-header__title slds-m-right--small slds-truncate slds-align-left">Create New Contact</h1>
+    </div>
+
+    <!-- Display Lightning Data Service errors, if any -->
+    <aura:if isTrue="{!not(empty(v.accountError))}">
+    	<div class="recordError">
+        	<ui:message title="Error" severity="error" closable="true">
+            	{!v.accountError}
+            </ui:message>
+        </div>
+    </aura:if>
+    <aura:if isTrue="{!not(empty(v.accountError))}">
+    	<div class="recordError">
+        	<ui:message title="Error" severity="error" closable="true">
+            	{!v.newContactError}
+            </ui:message>
+        </div>
+    </aura:if>
+    <!-- Display new Contact form -->
+    <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+    	<lightning:input aura:id="contactField" name="firstName" label="First Name"
+                     	value="{!v.simpleNewContact.FirstName}" required="true" />
+
+        <lightning:input aura:id="contactField" name="lastName" label="Last Name"
+                         value="{!v.simpleNewContact.LastName}" required="true" />
+
+        <lightning:input aura:id="contactField" name="phone" label="Phone"
+                         pattern="^(1?(-?\d{3})-?)?(\d{3})(-?\d{4})$"
+                         messageWhenPatternMismatch="The phone number must contain 7, 10, or 11 digits. Hypens are optional."
+                         value="{!v.simpleNewContact.Phone}" required="true" />
+
+        <lightning:input aura:id="contactField" name="email" label="Email"
+                         value="{!v.simpleNewContact.Email}" />
+    </div>
+    <div class="slds-modal__footer">
+    <!-- The style attribute is necessary so the lightning components can have the same look and feel as the standard salesforce modals -->
+    <!-- The values in style="margin:" may vary according to the space used in the component design -->
+        <lightning:button class="slds-button_neutral" label="Save Contact" onclick="{!c.handleSaveContact}"/>
+        <lightning:button class="slds-button_brand" label="Cancel" onclick="{!c.cancel}"/>
+    </div>
+
+    <!-- The height of the modal is defined in salesforce, when you create the new action. -->
+    <!-- Recommended height size: 398px -->
+
+</aura:component>
