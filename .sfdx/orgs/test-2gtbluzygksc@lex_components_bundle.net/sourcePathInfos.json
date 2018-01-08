@@ -1,0 +1,1082 @@
+[
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 102,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "b28b7af69320201d1cf206ebf28373980add1451",
+            "isWorkspace": false,
+            "isArtifactRoot": true
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 102,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "7505d64a54e061b7acd54ccd58b49dc43500b635",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 136,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "78dd78c06e81fd7afb457ecdb5af8fae5546e0a3",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 374,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "4376950ccbb96e387a196ff5a33d4d4588feca13",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/accountQuickContact",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/accountQuickContact",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 204,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "9031c07e649f15e8a12aa68e060f6a6a3a43f59d",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/accountQuickContact/accountQuickContact.cmp",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/accountQuickContact/accountQuickContact.cmp",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 2857,
+            "modifiedTime": 1515177272000,
+            "changeTime": 1515177272000,
+            "contentHash": "e1359f31ab36ca28d54807ef35abe2329ae05b0b",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/accountQuickContact/accountQuickContact.cmp-meta.xml",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/accountQuickContact/accountQuickContact.cmp-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 228,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "43c6ca14f7cd85b7b929d871194cb6292f131f8e",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/accountQuickContact/accountQuickContact.css",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/accountQuickContact/accountQuickContact.css",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 360,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "998ca42c754cb78fed6bcddb3ee06dd0c85afe53",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/accountQuickContact/accountQuickContactController.js",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/accountQuickContact/accountQuickContactController.js",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 3179,
+            "modifiedTime": 1515159934000,
+            "changeTime": 1515159934000,
+            "contentHash": "0955111379e3e289a43cfe2ad066089ef801509c",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/ldsAccountQuickContact",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/ldsAccountQuickContact",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 204,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "b3caab3640d25216b69270c529314c0aef66f04e",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/ldsAccountQuickContact/ldsAccountQuickContact.cmp",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/ldsAccountQuickContact/ldsAccountQuickContact.cmp",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 4771,
+            "modifiedTime": 1515177239000,
+            "changeTime": 1515177239000,
+            "contentHash": "0fe6a30785e49e85453c7c07566acd6d9c13784a",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/ldsAccountQuickContact/ldsAccountQuickContact.cmp-meta.xml",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/ldsAccountQuickContact/ldsAccountQuickContact.cmp-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 228,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "379d947ebfaf249a903d8b860a7dcc5904e5d4aa",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/ldsAccountQuickContact/ldsAccountQuickContact.css",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/ldsAccountQuickContact/ldsAccountQuickContact.css",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 360,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "998ca42c754cb78fed6bcddb3ee06dd0c85afe53",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/ldsAccountQuickContact/ldsAccountQuickContactController.js",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/ldsAccountQuickContact/ldsAccountQuickContactController.js",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 2467,
+            "modifiedTime": 1515174413000,
+            "changeTime": 1515174413000,
+            "contentHash": "3a70e81b9440e5675f0d4c05c612237e965198a0",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/ldsDeleteRecord",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/ldsDeleteRecord",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 204,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "db86197a7fbccdef55d94c4136b5f62bf760f46a",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/ldsDeleteRecord/ldsDeleteRecord.cmp",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/ldsDeleteRecord/ldsDeleteRecord.cmp",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 2256,
+            "modifiedTime": 1515177265000,
+            "changeTime": 1515177265000,
+            "contentHash": "6d9c13b67e27db9c7da6841a642724086602b762",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/ldsDeleteRecord/ldsDeleteRecord.cmp-meta.xml",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/ldsDeleteRecord/ldsDeleteRecord.cmp-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 228,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "43c6ca14f7cd85b7b929d871194cb6292f131f8e",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/ldsDeleteRecord/ldsDeleteRecord.css",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/ldsDeleteRecord/ldsDeleteRecord.css",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 361,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "0014d83b3f08e82aa05e195d5a02c90b9eb3fed4",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/ldsDeleteRecord/ldsDeleteRecordController.js",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/ldsDeleteRecord/ldsDeleteRecordController.js",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 1922,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "16d109cebd3a6af3c77878f4907d616805367f20",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/ldsDisplayRecord",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/ldsDisplayRecord",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 204,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "9650ff12aa2ef31ceebe3e0ac137ca790707d011",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/ldsDisplayRecord/ldsDisplayRecord.cmp",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/ldsDisplayRecord/ldsDisplayRecord.cmp",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 3278,
+            "modifiedTime": 1515177258000,
+            "changeTime": 1515177258000,
+            "contentHash": "13665a329376bcefc903de5d612b6f0ac86ef6a1",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/ldsDisplayRecord/ldsDisplayRecord.cmp-meta.xml",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/ldsDisplayRecord/ldsDisplayRecord.cmp-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 228,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "43c6ca14f7cd85b7b929d871194cb6292f131f8e",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/ldsDisplayRecord/ldsDisplayRecord.css",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/ldsDisplayRecord/ldsDisplayRecord.css",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 361,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "012a7e21471b4da5ca64c3eb8603d62ada698a25",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/ldsDisplayRecord/ldsDisplayRecordController.js",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/ldsDisplayRecord/ldsDisplayRecordController.js",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 283,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "580c31281a0e7a20db4a238316635717d8faa1cc",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/ldsSaveRecord",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/ldsSaveRecord",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 204,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "bec7eb19c1ae8cfc4ac3ef534b1bdfde6adf7b00",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/ldsSaveRecord/ldsSaveRecord.cmp",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/ldsSaveRecord/ldsSaveRecord.cmp",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 2821,
+            "modifiedTime": 1515177306000,
+            "changeTime": 1515177306000,
+            "contentHash": "9743132bce4d57a752dce99aa300e6613548a7ba",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/ldsSaveRecord/ldsSaveRecord.cmp-meta.xml",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/ldsSaveRecord/ldsSaveRecord.cmp-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 228,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "43c6ca14f7cd85b7b929d871194cb6292f131f8e",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/ldsSaveRecord/ldsSaveRecord.css",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/ldsSaveRecord/ldsSaveRecord.css",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 361,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "e4de4153333ebc99d705bd0312bbc066dc8eded2",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/ldsSaveRecord/ldsSaveRecordController.js",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/ldsSaveRecord/ldsSaveRecordController.js",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 1286,
+            "modifiedTime": 1515164843000,
+            "changeTime": 1515164843000,
+            "contentHash": "2b8f8319a4789d8c2eedef98debc5c65f72f73fc",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/massUpdateAccountCases",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/massUpdateAccountCases",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 170,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "781c48565cb13dd5d245dc0cc7154ce72acb90ad",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/massUpdateAccountCases/massUpdateAccountCases.cmp",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/massUpdateAccountCases/massUpdateAccountCases.cmp",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 1886,
+            "modifiedTime": 1515163167000,
+            "changeTime": 1515163167000,
+            "contentHash": "4b9afc61fb094f0d5110ca965a979596021f0e15",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/massUpdateAccountCases/massUpdateAccountCases.cmp-meta.xml",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/massUpdateAccountCases/massUpdateAccountCases.cmp-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 228,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "379d947ebfaf249a903d8b860a7dcc5904e5d4aa",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/massUpdateAccountCases/massUpdateAccountCasesController.js",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/massUpdateAccountCases/massUpdateAccountCasesController.js",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 2737,
+            "modifiedTime": 1515163531000,
+            "changeTime": 1515163531000,
+            "contentHash": "a102d3cb2f821e17e56d6b10a1e5811bfbf0d9f6",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/probonoOpportunity",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/probonoOpportunity",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 204,
+            "modifiedTime": 1515180448000,
+            "changeTime": 1515180448000,
+            "contentHash": "e0d5cd13301b95d17f9d5fde85fd4759bb29420e",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/probonoOpportunity/probonoOpportunity.cmp",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/probonoOpportunity/probonoOpportunity.cmp",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 2306,
+            "modifiedTime": 1515177276000,
+            "changeTime": 1515177276000,
+            "contentHash": "5fddaaff0b5821baebab1fa32798937f43796470",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/probonoOpportunity/probonoOpportunity.cmp-meta.xml",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/probonoOpportunity/probonoOpportunity.cmp-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 228,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "43c6ca14f7cd85b7b929d871194cb6292f131f8e",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/probonoOpportunity/probonoOpportunity.css",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/probonoOpportunity/probonoOpportunity.css",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 361,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "eb0cc8cdafeaa87d4b3635ca9b301b5afdc2a13b",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/probonoOpportunity/probonoOpportunityController.js",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/probonoOpportunity/probonoOpportunityController.js",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 2898,
+            "modifiedTime": 1515075052000,
+            "changeTime": 1515075052000,
+            "contentHash": "03de87a78d42148e17666c27121d57484249ef93",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/redirectConditionalUrl",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/redirectConditionalUrl",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 238,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "ea73b60267e1e26d722efcda24c10630ac85789e",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/redirectConditionalUrl/redirectConditionalUrl.cmp",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/redirectConditionalUrl/redirectConditionalUrl.cmp",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 2498,
+            "modifiedTime": 1515180477000,
+            "changeTime": 1515180477000,
+            "contentHash": "87e3d40d92a20e501fcb41cb0772401cd250c593",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/redirectConditionalUrl/redirectConditionalUrl.cmp-meta.xml",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/redirectConditionalUrl/redirectConditionalUrl.cmp-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 228,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "43c6ca14f7cd85b7b929d871194cb6292f131f8e",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/redirectConditionalUrl/redirectConditionalUrl.css",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/redirectConditionalUrl/redirectConditionalUrl.css",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 427,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "7cd401bb8a212daec627efc3a23d756121f52245",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/redirectConditionalUrl/redirectConditionalUrlController.js",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/redirectConditionalUrl/redirectConditionalUrlController.js",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 909,
+            "modifiedTime": 1515164303000,
+            "changeTime": 1515164303000,
+            "contentHash": "fd013b88c708c423ebc5f28905f7dc2c62f280c8",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/redirectConditionalUrl/redirectConditionalUrlHelper.js",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/redirectConditionalUrl/redirectConditionalUrlHelper.js",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 4241,
+            "modifiedTime": 1515164567000,
+            "changeTime": 1515164567000,
+            "contentHash": "0663b9e410a93b0222e6c1749e125f1be9de1e1a",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/setOpportunityProbability",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/setOpportunityProbability",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 238,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "4ea97754579196adc00d56bd87ca17a82693281d",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/setOpportunityProbability/setOpportunityProbability.cmp",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/setOpportunityProbability/setOpportunityProbability.cmp",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 2519,
+            "modifiedTime": 1515177397000,
+            "changeTime": 1515177397000,
+            "contentHash": "016fafbf3148e762c806ee1692d99f6aa3f3e454",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/setOpportunityProbability/setOpportunityProbability.cmp-meta.xml",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/setOpportunityProbability/setOpportunityProbability.cmp-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 228,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "43c6ca14f7cd85b7b929d871194cb6292f131f8e",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/setOpportunityProbability/setOpportunityProbability.css",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/setOpportunityProbability/setOpportunityProbability.css",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 620,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "2cf5dd11cae20e54b4c6242f7d0fad07d87a3db7",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/setOpportunityProbability/setOpportunityProbabilityController.js",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/setOpportunityProbability/setOpportunityProbabilityController.js",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 1113,
+            "modifiedTime": 1515162492000,
+            "changeTime": 1515162492000,
+            "contentHash": "fc1cd5014e0877943ef7f93584307bdb0d5d6372",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/setOpportunityProbability/setOpportunityProbabilityHelper.js",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/aura/setOpportunityProbability/setOpportunityProbabilityHelper.js",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 2811,
+            "modifiedTime": 1515162568000,
+            "changeTime": 1515162568000,
+            "contentHash": "e36bd0f6e1281391d6c5b726ef39dd2a987f2f0a",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/classes",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/classes",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 748,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "3bcbebc476bbde8d63f8e88877b43f5a2f8815d6",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/classes/AccountQuickContactController.cls",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/classes/AccountQuickContactController.cls",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 1400,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "37e7bcd06c3eb24774583d6522762805d2ba1252",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/classes/AccountQuickContactController.cls-meta.xml",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/classes/AccountQuickContactController.cls-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 207,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "a3e5dee986261a95a6decd31613588672c72643f",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/classes/MassUpdateAccountCasesController.cls",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/classes/MassUpdateAccountCasesController.cls",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 1396,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "7854b5322b292d6b3cce1bcf0e1490a3ab8680dc",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/classes/MassUpdateAccountCasesController.cls-meta.xml",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/classes/MassUpdateAccountCasesController.cls-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 210,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "dd6432d7f51f123d55df2cd24fb62f5458ea7c9f",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/classes/ProBonoOpportunityController.cls",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/classes/ProBonoOpportunityController.cls",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 1451,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "0e6f538365cf3b21a8f1a2f1756f4bc674e35100",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/classes/ProBonoOpportunityController.cls-meta.xml",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/classes/ProBonoOpportunityController.cls-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 206,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "136aa1cd106dc60c438994444c04a2f710ff70aa",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/classes/RedirectConditionalUrlController.cls",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/classes/RedirectConditionalUrlController.cls",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 1681,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "85ec6368b025ad6a4dcd3a1d08e1d7f9972070b7",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/classes/RedirectConditionalUrlController.cls-meta.xml",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/classes/RedirectConditionalUrlController.cls-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 210,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "18d359d155c7992da6ba87720385368d4a80c020",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/classes/SetOpportunityProbabilityController.cls",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/classes/SetOpportunityProbabilityController.cls",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 1388,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "8564fc3296e18ba602c18704df600e6e9c5868df",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/classes/SetOpportunityProbabilityController.cls-meta.xml",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/classes/SetOpportunityProbabilityController.cls-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 213,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "15c2905ff0d9a659639d9d5d5d950f08e1450ebc",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/classes/TestAccountQuickContactController.cls",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/classes/TestAccountQuickContactController.cls",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 1420,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "abcd3345d228942ee3f5fa919acd2cbf3bd402d7",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/classes/TestAccountQuickContactController.cls-meta.xml",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/classes/TestAccountQuickContactController.cls-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 211,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "bd58527ae5acb590b29a5b3a25fd3f61c1debb86",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/classes/TestMassUpdateAccountCasesController.cls",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/classes/TestMassUpdateAccountCasesController.cls",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 1736,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "9b6393daa6ce6d14097ecec112fdd4e8a341acfd",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/classes/TestMassUpdateAccountCasesController.cls-meta.xml",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/classes/TestMassUpdateAccountCasesController.cls-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 214,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "19a71066da574336f3cc22730f112f4df4a2ffcd",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/classes/TestProBonoOpportunityController.cls",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/classes/TestProBonoOpportunityController.cls",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 2055,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "da96f7c3d10170ec158118dc1b30b47addf21e89",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/classes/TestProBonoOpportunityController.cls-meta.xml",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/classes/TestProBonoOpportunityController.cls-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 210,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "4d8769a6f6ebc857c4897791ddda7c892050dc8b",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/classes/TestRedirectConditionalUrlController.cls",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/classes/TestRedirectConditionalUrlController.cls",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 1991,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "492f5005ac5ccdbab18b298ae8413910515cc46f",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/classes/TestRedirectConditionalUrlController.cls-meta.xml",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/classes/TestRedirectConditionalUrlController.cls-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 214,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "b9279ea4c1ce0ede2faafebb349cdc7344694c6d",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/classes/TestSetOpportunityProbabilityController.cls",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/classes/TestSetOpportunityProbabilityController.cls",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 2290,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "1df52ad8a675d7bf97859ce4495695c51f7ab2f9",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/classes/TestSetOpportunityProbabilityController.cls-meta.xml",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle/force-app/main/default/classes/TestSetOpportunityProbabilityController.cls-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 217,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "951294868bcead5fe31f38352b194b8f62bad644",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/smartinez/Documents/workspace/LEXComponentsBundle",
+        {
+            "state": "n",
+            "sourcePath": "/Users/smartinez/Documents/workspace/LEXComponentsBundle",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 408,
+            "modifiedTime": 1515070648000,
+            "changeTime": 1515070648000,
+            "contentHash": "22d1206b7f147c98f48f16a7f3bc6fbc4f6e053b",
+            "isWorkspace": true,
+            "isArtifactRoot": false
+        }
+    ]
+]

@@ -1,42 +1,36 @@
 <!--
- * Copyright (c) 2018, salesforce.com, inc.
+ * Copyright (c) 2018, Salesforce.com, inc.
  * All rights reserved.
  * Licensed under the BSD 3-Clause license.
  * For full license text, see LICENSE.txt file in the repo root
  -->
 
-<!--
-First things first:
-The "body" of the component needs certain conditions so it can be used as an action, also needs to
-have context of the page that will be executed, and in this case since we are modifying data
-and we want to save the changes, we need an APEX class to help with the work.
+<!-- 
+To be used as a quick action, a Lightning component needs to meet certain conditions. It needs to be configured as able to be executed as an action. It also needs to know the context of the page that it’s executed from. And, since you’re modifying data and want to save the changes, you need an Apex class to help with the work.
 
-For the component to know where is standing, needs what you can see as "force:hasRecordId" (in implements)
-That condition (that is called interface) is used to save the actual record Id, so we can work on that record.
+For the component to know its page context, it must implement the "force:hasRecordId" interface. 
+This interface helps save the record ID, so you can make changes to the record.
 
-For the component to be used as a Quick Action, "force:lightningQuickActionWithoutHeader" is needed.
-
-An Apex controller is needed if we are going to update data (using the database)
+For the component to be used as a quick action, it must also implement the  "force:lightningQuickActionWithoutHeader" interface.
 
 -->
 <aura:component implements="force:lightningQuickActionWithoutHeader,force:hasRecordId"
-                controller="CustomController">
-    			<!-- In the future, Replace "CustomController" with an Apex class that you will use -->
-
-    <!-- This attribute saves the actual record ID -->
+                controller="MassUpdateAccountCasesController">
+    			<!-- Replace MassUpdateAccountCasesController with your Apex class -->
+    
+    <!-- This attribute saves the record ID -->
     <aura:attribute name="recordId" type="String" />
-
-    <!-- This is the way to execute a function from the controller as soon as the component is open
-		 Is recommended when the action only process data and there is no need for user interaction -->
+    
+    <!-- This executes a function from the controller as soon as the component is open. 
+	This is recommended when the action only processes data and there’s no need for user interaction -->
     <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
-    <!--
-       With the "c" in "{!c.nameOfTheFunction}" is how the component communicates with the
+    <!-- 
+       The "c" in "{!c.nameOfTheFunction}" is how the component communicates with the 
        Javascript controller.
-       "nameOfTheFunction" Will be replaced with the name of the function that will be executed in the
+       "nameOfTheFunction" will be replaced with the name of the function to be executed in the
        Javascript controller.
 	-->
-
-    <!-- In this scenario, since is all server process, we don't need to set modal design or size, it will close as soon as
-		 the component is executed. -->
-
+    
+    <!-- The process is all handled by the server, so you don't need to set modal design or size. The modal will close as soon as the component is executed. -->
+	
 </aura:component>

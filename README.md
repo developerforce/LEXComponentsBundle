@@ -22,7 +22,7 @@ install.cmd
 ```
 
 ### Non Salesforce DX - install unmanaged package to Developer Edition or Sandbox 
-[Click here to install](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1I000002xvXu)
+[Click here to install](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1I000002y2Ih)
 
 ## Classes & Components
 1. Apex classes (where the server side methods of the components are written): 

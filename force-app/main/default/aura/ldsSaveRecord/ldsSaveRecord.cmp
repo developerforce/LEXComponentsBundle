@@ -1,26 +1,26 @@
 <!--
- * Copyright (c) 2018, salesforce.com, inc.
+ * Copyright (c) 2018, Salesforce.com, inc.
  * All rights reserved.
  * Licensed under the BSD 3-Clause license.
  * For full license text, see LICENSE.txt file in the repo root
  -->
 
-<!--
+<!-- 
+To be used as a quick action, a Lightning component needs to meet certain conditions. It needs to be configured as able to be executed as an action. It also needs to know the context of the page that it’s executed from.
 
-The "body" of the component needs certain conditions so it can be used as an action, also needs to
-have context of the page that will be executed.
+For the component to know its page context, it must implement the "force:hasRecordId" interface. 
+This interface helps save the record ID, so you can make changes to the record.
 
-For the component to know where is standing, needs what you can see as "force:hasRecordId" (in implements)
-That condition (that is called interface) is used to save the actual record Id, so we can work on that record.
+For the component to be used as a quick action, it must also implement the  "force:lightningQuickActionWithoutHeader" interface.
 
-For the component to be used as a Quick Action, "force:lightningQuickActionWithoutHeader" is needed.
+In this case we are using Lightning Data Service (LDS), so you don’t need an Apex class.
 
-In this case we are using Lightning Data Service (LDS), so an Apex class is not needed.
+This quick action needs to be implemented in Account object.
 
 -->
 <aura:component implements="force:lightningQuickActionWithoutHeader,force:hasRecordId">
-
-    <!-- To implement LDS we need "target" attributes, to show and save data, also "force:recordData" is needed -->
+    
+    <!-- To implement LDS we need "target" attributes to show and save data, plus "force:recordData" -->
     <aura:attribute name="record" type="Object" />
     <aura:attribute name="simpleRecord" type="Object" />
     <aura:attribute name="recordError" type="String" />
@@ -31,13 +31,13 @@ In this case we are using Lightning Data Service (LDS), so an Apex class is not 
                       targetRecord="{!v.record}"
                       targetFields="{!v.simpleRecord}"
                       mode="EDIT" />
-
-    <!-- targetRecord -> Where to store the result
-		 targetFields -> A simplified view of the fields on targetRecord, we refer this object in the user interface markup
-         targetError  -> If any error is found, it stores the error message
+    
+    <!-- targetRecord -> Stores the result
+		 targetFields -> A simplified view of the fields on targetRecord. We refer to this object in the user interface markup.
+         targetError  -> Stores the error message, if any.
 	-->
-
-	<!-- User Interface -->
+    
+	<!-- User Interface -->    
     <div class="slds-modal__header">
        	<h2 class="slds-text-heading_medium slds-hyphenate">{!v.simpleRecord.Name}</h2>
     </div>
@@ -54,12 +54,10 @@ In this case we are using Lightning Data Service (LDS), so an Apex class is not 
                      value="{!v.simpleRecord.Name}" required="true" />
     </div>
     <div class="slds-modal__footer">
-    <!-- The style attribute is necessary so the lightning components can have the same look and feel as the standard salesforce modals -->
-    <!-- The values in style="margin:" may vary according to the space used in the component design -->
     	<lightning:button class="slds-button_brand" label="Cancel" onclick="{!c.cancel}" />
-        <lightning:button class="slds-button_neutral" label="Save Record" onclick="{!c.handleSaveRecord}" />
+        <lightning:button class="slds-button_neutral" label="Save" onclick="{!c.handleSaveRecord}" />
     </div>
-    <!-- The height of the modal is defined in salesforce, when you create the new action. -->
-    <!-- Recommended height size: 250px -->
-
+    <!-- The height of the modal is defined in Salesforce when you create the new action. -->
+    <!-- Recommended height: 250px -->
+    
 </aura:component>
