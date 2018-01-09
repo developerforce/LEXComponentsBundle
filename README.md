@@ -1,4 +1,4 @@
-# Lightning Components Bundle
+# Sample Components for Lightning Component Actions
 This repository contains sample components to help you build Lightning component actions, which can be used to replace JavaScript buttons used in Salesforce Classic. These components cover the following use cases that are common in JavaScript buttons:
 1. Dialogues
 2. Conditional URL
@@ -128,9 +128,9 @@ install.cmd
 6. Select the component you want to be called by the action.
 7. Enter a label for the action, then click **Save**.
 8. Add the action to the object’s page layout.
-    a. Click **Page Layouts**.
-    b. Select the layout you want to add the action to.
-    c. If you haven’t already, click **override the predefined actions** in the *Salesforce Mobile and Lightning Experience* section of the layout.
-    d. In the palette, click the **Mobile & Lightning Actions** category, and then drag the action that you created to the *Salesforce Mobile and Lightning Experience* section.
+    a. Click **Page Layouts**. <br>
+    b. Select the layout you want to add the action to. <br>
+    c. If you haven’t already, click **override the predefined actions** in the *Salesforce Mobile and Lightning Experience* section of the layout. <br>
+    d. In the palette, click the **Mobile & Lightning Actions** category, and then drag the action that you created to the *Salesforce Mobile and Lightning Experience* section.<br>
     e. Click **Save**.
 9. Navigate to a record and give the quick action a try. You’ll likely find it in the page-level actions menu in the record highlights panel.
