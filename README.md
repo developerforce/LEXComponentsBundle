@@ -31,7 +31,7 @@ install.cmd
 
 ## Classes & Components
 ##### Components are listed by name. Details include the use case it applies to, the object it acts upon, its description, and the set of files that make up the component.
-#
+&nbsp;
 ##### Components that use Lightning Data Service begin with “lds”. Components that don’t use Lightning Data Service have Apex classes associated with them.
 
 1. accountQuickContact
