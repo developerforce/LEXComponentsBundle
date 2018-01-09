@@ -41,6 +41,7 @@ install.cmd
     * Files:
         * accountQuickContact.cmp
         * accountQuickContactController.js
+        * accountQuickContact.css
         * AccountQuickContactController.cls
         * TestAccountQuickContactController.cls
 2. ldsAccountQuickContact
@@ -48,15 +49,17 @@ install.cmd
     * Object: Account
     * Description: An example of how Lightning Data Service works for creating a new record. Opens a form to create a contact related to the opportunity. The data is sent to the server through the JavaScript controller, so no Apex class is needed.
     * Files:
-        * accountQuickContactLDS.cmp
-        * accountQuickContactLDSController.js
-        * accountQuickContactLDSHelper.js
+        * ldsAccountQuickContact.cmp
+        * ldsAccountQuickContactController.js
+        * ldsAccountQuickContactLDS.css
 3. ldsDisplayRecord
     * Use case: Dialogues
     * Object: Account
     * Description: An example of how Lightning Data Service works for displaying a record. A popup window opens showing data about the current record. In this case, neither a JavaScript controller nor an Apex controller are needed.
     * Files: 
         * ldsDisplayRecord.cmp
+        * ldsDisplayRecordController.js
+        * ldsDisplayRecord.css
 4. ldsDeleteRecord
     * Use case: Dialogues
     * Object: Any
@@ -64,6 +67,7 @@ install.cmd
     * Files: 
         * ldsDeleteRecord.cmp
         * ldsDeleteRecordController.js
+        * ldsDeleteRecord.css
 5. ldsSaveRecord
     * Use case: Dialogues
     * Object: Account
@@ -71,13 +75,15 @@ install.cmd
     * Files: 
         * ldsSaveRecord.cmp
         * ldsSaveRecordController.js
+        * ldsSaveRecord.css
 6. massUpdateAccountCases
     * Use case: Mass updates
     * Object: Account
     * Description: Updates all the cases related to the account. It changes the case priority to “Low”, the status to “Closed” and the description to “Case Closed.”
     * Files: 
         * massUpdateAccountCases.cmp
-        * massUpdateAccountContactsCases.js
+        * massUpdateAccountCases.css
+        * MassUpdateAccountCasesController.js
         * MassUpdateAccountCasesController.cls
         * TestMassUpdateAccountCasesController.cls
 7. probonoOpportunity
@@ -87,6 +93,7 @@ install.cmd
     * Files: 
         * probonoOpportunity.cmp
         * probonoOpportunityController.js
+        * probonoOpportunity.css
         * ProBonoOpportunityController.cls
         * TestProBonoOpportunityController.cls
 8. redirectConditionalUrl
@@ -97,6 +104,7 @@ install.cmd
         * redirectConditionalUrl.cmp
         * redirectConditionalUrlController.js
         * recirectConditionalUrlHelper.js
+        * redirectConditionalUrl.css
         * RedirectConditionalUrlController.cls
         * TestRedirectConditionalUrlController.cls
 9. setOpportunityProbability
@@ -107,6 +115,7 @@ install.cmd
         * setOpportunityProbability.cmp
         * setOpportunityProbabilityController.js
         * setOpportunityProbabilityHelper.js
+        setOpportunityProbability.css
         * setOpportunityProbabilityController.cls
         * TestSetOpportunityProbabilityController.cls
 
