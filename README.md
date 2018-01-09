@@ -127,7 +127,7 @@ install.cmd
 5. From the Action Type drop down list, select **Lightning Component**.
 6. Select the component you want to be called by the action.
 7. Enter a label for the action, then click **Save**.
-8. Add the action to the object’s page layout.
+8. Add the action to the object’s page layout. <br>
     a. Click **Page Layouts**. <br>
     b. Select the layout you want to add the action to. <br>
     c. If you haven’t already, click **override the predefined actions** in the *Salesforce Mobile and Lightning Experience* section of the layout. <br>
