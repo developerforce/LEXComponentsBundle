@@ -1,13 +1,11 @@
 # Lightning Components Bundle
-This repository contains example components to help you build lightning components actions.
-This actions are used to replace javascript buttons used in Salesforce Classic.
-Among these components we cover the following use cases that are common in javascript buttons:
+This repository contains sample components to help you build Lightning component actions, which can be used to replace JavaScript buttons used in Salesforce Classic. These components cover the following use cases that are common in JavaScript buttons:
 1. Dialogues
 2. Conditional URL
 3. Mass Updates
 
 ## Getting Started
-### For Salesforce DX use these instructions
+### Using Salesforce DX:
 * #### Mac or Linux
 ```
 git clone https://github.com/developerforce/LEXComponentsBundle
@@ -21,62 +19,109 @@ cd LEXComponentsBundle
 install.cmd
 ```
 
-### Non Salesforce DX - install unmanaged package to Developer Edition or Sandbox 
+### Not using Salesforce DX: Install this unmanaged package to your Developer Edition or Sandbox org.
 [Click here to install](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1I000002y2Ih)
 
-## Classes & Components
-1. Apex classes (where the server side methods of the components are written): 
-    * RedirectConditionalUrlController.cls
-    * MassUpdateAccountCasesController.cls
-    * AccountQuickContactController.cls
-    * SetOpportunityProbabilityController.cls	
-    * ProBonoOpportunityController.cls
-2. Apex classes (for unit tests):
-    * TestAccountQuickContactController.cls
-    * TestProBonoOpportunityController.cls
-    * TestRedirectConditionalUrlController.cls
-    * TestSetOpportunityProbabilityController.cls
-    * TestMassUpdateAccountCasesController.cls
-3. Component: probonoOpportunity
-    * Converts an Opportunity into a pro-bono one (Amount equals 0).
-    * It uses an Apex controller for server-side process.
-4. Component: accountQuickContact
-    * A small form to create contacts for an account
-    * It uses an Apex controller for server-side process.
-5. Component: setOpportunityProbability:
-    * It opens a dialogue with different buttons, each button updates the Opportunity with a different probability number.
-    * It uses an Apex controller for server-side process.
-6. Component: massUpdateAccountCases:
-    * Updates the status and priority of all the cases related to the account.
-    * It uses an Apex controller for server-side process.
-7. Component: redirectConditionalUrl:
-    * Opens a dialogue to choose if you want to open the billing address or the shipping address on a map.
-    * It uses an Apex controller for server-side process.
-8. Component: ldsDisplayRecord:
-    * Opens a window showing details about an account.
-    * It uses Lightning Data Service.
-9. Component: ldsSaveRecord:
-    * Opens a window that updates the account record.
-    * It uses Lightning Data Service
-10. Component: ldsDeleteRecord:
-    * Deletes a contact record
-    * It uses Lightning Data Service
-11. Component: ldsAccountQuickContact:
-    * A small form to create contacts for an Account.
-    * It's similar to accountQuickContact component but using Lightning Data Service.
+## How to Choose a Component
+1. Look at your org to determine which JavaScript buttons are still in use and need to be converted.
+2. Pick a button that you’d like to replace.
+3. From the component list, pick one that closely matches what your JavaScript button is doing.
+4. Edit the component sample code to match your needs. Tip: Make a copy of the component's files and modify those instead. 
+5. Test and deploy per the "Create and Test Your Lightning Component Action" section below.
 
-## How to create a Lightning Quick Action in Salesforce
-1. Go to Setup
-2. Click on Object Manager
-3. Select the *Account* Object to add the Quick Action to
-4. Click the "Buttons, Links & Actions" in the left hand navigation
-5. Click on "New Action"
-6. Select in "Lightning Component in the "Action Type" drop down list
-7. Select one of the ldsAccountQuickConnect component in the "Lightning Component" drop down list
-8. Enter "Quick Contact" for the Label then click Save
-9. Click  "Page Layouts" in the left hand navigation
-10. Select the *Account Layout*
-11. In the *Salesforce Mobile and Lightning Experience* section of the layout click the *override the predefined actions* link in the first sentence to enable custom Quick Actions
-12. Click the *Mobile & Lightning Actions* and then drag and drop the *Quick Contact* quick action in the page layout
-13. Save
-14. Navigate to an account record and create a new contact using the quick action.
+## Classes & Components
+##### Components are listed by name. Details include the use case it applies to, the object it acts upon, its description, and the set of files that make up the component.
+#
+##### Components that use Lightning Data Service begin with “lds”. Components that don’t use Lightning Data Service have Apex classes associated with them.
+
+1. accountQuickContact
+    * Use case: Dialogues
+    * Object: Account
+    * Description: Opens a form to create a contact related to the opportunity. This is similar to ldsAccountQuickContact, but in this case the data is sent to an Apex class instead.
+    * Files:
+        * accountQuickContact.cmp
+        * accountQuickContactController.js
+        * AccountQuickContactController.cls
+        * TestAccountQuickContactController.cls
+2. ldsAccountQuickContact
+    * Use case: Dialogues
+    * Object: Account
+    * Description: An example of how Lightning Data Service works for creating a new record. Opens a form to create a contact related to the opportunity. The data is sent to the server through the JavaScript controller, so no Apex class is needed.
+    * Files:
+        * accountQuickContactLDS.cmp
+        * accountQuickContactLDSController.js
+        * accountQuickContactLDSHelper.js
+3. ldsDisplayRecord
+    * Use case: Dialogues
+    * Object: Account
+    * Description: An example of how Lightning Data Service works for displaying a record. A popup window opens showing data about the current record. In this case, neither a JavaScript controller nor an Apex controller are needed.
+    * Files: 
+        * ldsDisplayRecord.cmp
+4. ldsDeleteRecord
+    * Use case: Dialogues
+    * Object: Any
+    * Description: An example of how Lightning Data Service works for deleting a record. When the user executes the component, the JavaScript controller calls the server to delete the record, so no Apex class is needed.
+    * Files: 
+        * ldsDeleteRecord.cmp
+        * ldsDeleteRecordController.js
+5. ldsSaveRecord
+    * Use case: Dialogues
+    * Object: Account
+    * Description: An example of how Lightning Data Service works for updating a record. A popup window opens with information about the record and an editing form. Upon saving, the record is updated. The JavaScript controller sends the updated data to the server, so no Apex class is needed.
+    * Files: 
+        * ldsSaveRecord.cmp
+        * ldsSaveRecordController.js
+6. massUpdateAccountCases
+    * Use case: Mass updates
+    * Object: Account
+    * Description: Updates all the cases related to the account. It changes the case priority to “Low”, the status to “Closed” and the description to “Case Closed.”
+    * Files: 
+        * massUpdateAccountCases.cmp
+        * massUpdateAccountContactsCases.js
+        * MassUpdateAccountCasesController.cls
+        * TestMassUpdateAccountCasesController.cls
+7. probonoOpportunity
+    * Use case: Dialogues
+    * Object: Opportunity
+    * Description: When executing this component in an opportunity, a popup window opens, asking for confirmation to convert the record to a pro-bono opportunity. If the user clicks “Confirm”, the opportunity amount updates to $0 and the page refreshes.
+    * Files: 
+        * probonoOpportunity.cmp
+        * probonoOpportunityController.js
+        * ProBonoOpportunityController.cls
+        * TestProBonoOpportunityController.cls
+8. redirectConditionalUrl
+    * Use case: Conditional URL
+    * Object: Account
+    * Description: Opens a popup window with two options: One opens the billing address in Google Maps, and the other opens the shipping address. This uses the record ID, sends it to the server, and retrieves the address data.
+    * Files: 
+        * redirectConditionalUrl.cmp
+        * redirectConditionalUrlController.js
+        * recirectConditionalUrlHelper.js
+        * RedirectConditionalUrlController.cls
+        * TestRedirectConditionalUrlController.cls
+9. setOpportunityProbability
+    * Use case: Dialogues
+    * Object: Opportunity
+    * Description: Opens a popup window with three buttons. One button sets the probability of the opportunity to a High value (%80), another sets it to a medium value (%50), and the last to a low value (%20). The Javascript controller sends the record ID and the option selected to the Apex class.
+    * Files: 
+        * setOpportunityProbability.cmp
+        * setOpportunityProbabilityController.js
+        * setOpportunityProbabilityHelper.js
+        * setOpportunityProbabilityController.cls
+        * TestSetOpportunityProbabilityController.cls
+
+## Create and Test Your Lightning Component Action
+1. Make sure the Lightning components are installed in your org.
+2. In Setup, go to the Object Manager.
+3. Select the object that you want to add the action to.
+4. Click **Buttons, Links & Actions**, then click **New Action**.
+5. From the Action Type drop down list, select **Lightning Component**.
+6. Select the component you want to be called by the action.
+7. Enter a label for the action, then click **Save**.
+8. Add the action to the object’s page layout.
+    a. Click **Page Layouts**.
+    b. Select the layout you want to add the action to.
+    c. If you haven’t already, click **override the predefined actions** in the *Salesforce Mobile and Lightning Experience* section of the layout.
+    d. In the palette, click the **Mobile & Lightning Actions** category, and then drag the action that you created to the *Salesforce Mobile and Lightning Experience* section.
+    e. Click **Save**.
+9. Navigate to a record and give the quick action a try. You’ll likely find it in the page-level actions menu in the record highlights panel.
