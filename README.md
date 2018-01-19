@@ -37,7 +37,7 @@ install.cmd
 1. accountQuickContact
     * Use case: Dialogues
     * Object: Account
-    * Description: Opens a form to create a contact related to the opportunity. This is similar to ldsAccountQuickContact, but in this case the data is sent to an Apex class instead.
+    * Description: Opens a form to create a contact related to the account. This is similar to ldsAccountQuickContact, but in this case the data is sent to an Apex class instead.
     * Files:
         * accountQuickContact.cmp
         * accountQuickContactController.js
