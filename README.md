@@ -47,7 +47,7 @@ install.cmd
 2. ldsAccountQuickContact
     * Use case: Dialogues
     * Object: Account
-    * Description: An example of how Lightning Data Service works for creating a new record. Opens a form to create a contact related to the opportunity. The data is sent to the server through the JavaScript controller, so no Apex class is needed.
+    * Description: An example of how Lightning Data Service works for creating a new record. Opens a form to create a contact related to the account. The data is sent to the server through the JavaScript controller, so no Apex class is needed.
     * Files:
         * ldsAccountQuickContact.cmp
         * ldsAccountQuickContactController.js
