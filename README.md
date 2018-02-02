@@ -136,4 +136,4 @@ install.cmd
 9. Navigate to a record and give the quick action a try. You’ll likely find it in the page-level actions menu in the record highlights panel.
 
 <br>
-Let us know how you feel about the components. Post your feedback and questions to the [Lightning Now!](https://success.salesforce.com/featuredGroupDetail?id=a1z3A000007SBrQQAW) group in the Trailblazer Community with the hashtag #JS_Alternatives.
+Let us know how you feel about the components. Post your feedback and questions to the [Lightning Now! group](https://success.salesforce.com/featuredGroupDetail?id=a1z3A000007SBrQQAW) in the Trailblazer Community with the hashtag #JS_Alternatives.
