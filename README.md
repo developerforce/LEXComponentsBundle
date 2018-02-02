@@ -134,3 +134,6 @@ install.cmd
     d. In the palette, click the **Mobile & Lightning Actions** category, and then drag the action that you created to the *Salesforce Mobile and Lightning Experience* section.<br>
     e. Click **Save**.
 9. Navigate to a record and give the quick action a try. You’ll likely find it in the page-level actions menu in the record highlights panel.
+
+<br>
+*Let us know how you feel about the components. Post your feedback and questions to the [Lightning Now!](https://success.salesforce.com/featuredGroupDetail?id=a1z3A000007SBrQQAW) group in the Trailblazer Community with the hashtag #JS_Alternatives.*
