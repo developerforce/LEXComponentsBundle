@@ -20,7 +20,7 @@ install.cmd
 ```
 
 ### Not using Salesforce DX: Install this unmanaged package to your Developer Edition or Sandbox org.
-[Click here to install](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1I000002y2Ih)
+[Click here to install](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1I000002y2tg)
 
 ## How to Choose a Component
 1. Look at your org to determine which JavaScript buttons are still in use and need to be converted.

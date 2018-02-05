@@ -33,7 +33,8 @@
                 	var resultsToast = $A.get("e.force:showToast");
                     resultsToast.setParams({
                         "title" : "Success",
-                        "message" : "The cases were updated."
+                        "message" : "The cases were updated.",
+                        "type" : "success"
                     });
                     resultsToast.fire();
                     //These next commands call the Aura functions. They are predefined functions that help with the user interface.

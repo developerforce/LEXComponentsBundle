@@ -37,7 +37,8 @@
                 var resultsToast = $A.get("e.force:showToast");
                 resultsToast.setParams({
                     "title" : "Contact saved",
-                    "message" : "The new contact was created"
+                    "message" : "The new contact was created",
+                    "type" : "success"
                 });
 
                 $A.get("e.force:closeQuickAction").fire();

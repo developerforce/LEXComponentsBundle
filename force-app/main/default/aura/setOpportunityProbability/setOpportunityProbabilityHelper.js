@@ -38,7 +38,8 @@
                     var resultsToast = $A.get("e.force:showToast");
                     resultsToast.setParams({
                         "title" : "Success",
-                        "message" : "The opportunity was updated."
+                        "message" : "The opportunity was updated.",
+                        "type" : "success"
                     });
                     resultsToast.fire();
                 	$A.get("e.force:refreshView").fire();

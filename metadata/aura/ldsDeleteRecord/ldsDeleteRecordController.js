@@ -17,7 +17,8 @@
                 var resultsToast = $A.get("e.force:showToast");
                 resultsToast.setParams({
                     "title" : "Deleted",
-                    "message" : "The record was deleted."
+                    "message" : "The record was deleted.",
+                    "type" : "info"
                 });
                 resultsToast.fire();
                 var url = "/one/one.app#/sObject/Contact/list?filterName=Recent";

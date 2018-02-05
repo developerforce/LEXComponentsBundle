@@ -45,7 +45,8 @@
                 	var resultsToast = $A.get("e.force:showToast");
                     resultsToast.setParams({
                         "title" : "Success",
-                        "message" : "Contact was created."
+                        "message" : "Contact was created.",
+                        "type" : "success"
                     });
                     resultsToast.fire();
                 	$A.get("e.force:refreshView").fire();
