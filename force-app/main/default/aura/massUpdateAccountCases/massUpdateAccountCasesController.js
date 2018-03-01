@@ -27,7 +27,7 @@
         action.setCallback(this, 
             //This defines what to do inside a function that gets the response from the Apex controller as a parameter              
             function(response){
-                //This saves the state of the response (successfull or not).
+                //This saves the state of the response (successful or not).
             	var state = response.getState();
             	if(state === "SUCCESS"){
                 	var resultsToast = $A.get("e.force:showToast");
