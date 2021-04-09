@@ -26,7 +26,9 @@ public with sharing class AccountQuickContactController {
     public static void newQuickContactForAccount(String accountId, String firstName, String lastName, String phone, String email){
         Contact c = new Contact();
         c.FirstName = firstName;
+		c.MiddleName = middleName;  //neha changed
         c.LastName = lastName;
+		
         c.Phone = phone;
         c.Email = email;
         c.AccountId = accountId;
