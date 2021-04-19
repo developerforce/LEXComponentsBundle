@@ -27,7 +27,7 @@ public with sharing class AccountQuickContactController {
         Contact c = new Contact();
         c.FirstName = firstName;
         c.LastName = lastName; //neha
-        c.Phone = phone;
+        c.Phone = phone; //gupta
         c.Email = email;
         c.AccountId = accountId;
         insert c;
